@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JASTEB - Jasa Tebar</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        header {
+            background-color: #25D366;
+            color: white;
+            padding: 20px 0;
+            text-align: center;
+            border-radius: 10px 10px 0 0;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+        .content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .price-list {
+            margin: 20px 0;
+        }
+        .price-list h2 {
+            color: #25D366;
+            border-bottom: 2px solid #25D366;
+            padding-bottom: 5px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 15px 0;
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #f2f2f2;
+        }
+        .contact {
+            background-color: #f9f9f9;
+            padding: 15px;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .contact h2 {
+            color: #25D366;
+            margin-top: 0;
+        }
+        .whatsapp-btn {
+            display: inline-block;
+            background-color: #25D366;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+        .whatsapp-btn:hover {
+            background-color: #128C7E;
+        }
+        .payment-methods {
+            margin: 20px 0;
+        }
+        .payment-methods h2 {
+            color: #25D366;
+        }
+        .qris-container {
+            text-align: center;
+            margin: 20px 0;
+        }
+        .qris-image {
+            max-width: 200px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+        }
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            color: #777;
+            font-size: 14px;
+        }
+        .music-control {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            padding: 10px;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+<body>
+    <!-- Elemen audio untuk musik latar -->
+    <audio id="bgMusic" autoplay loop>
+        <!-- Ganti dengan URL musik Anda atau path file lokal -->
+        <source src="CalonMantu.mp3" type="audio/mpeg">
+        Browser Anda tidak mendukung elemen audio.
+    </audio>
+
+    <!-- Tombol kontrol musik -->
+    <div class="music-control" id="musicToggle">♪</div>
+
+    <div class="container">
+        <header>
+            <h1>JASTEB - JASA TEBAR</h1>
+            <p>Layanan Tebar Resmi dan Berkualitas</p>
+        </header>
+        
+        <div class="content">
+            <div class="price-list">
+                <h2>LIST JASTEB</h2>
+                <table>
+                    <tr>
+                        <th>Paket</th>
+                        <th>Jumlah RESS</th>
+                    </tr>
+                    <tr>
+                        <td>1K</td>
+                        <td>30+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>2K</td>
+                        <td>60+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>3K</td>
+                        <td>90+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>4K</td>
+                        <td>120+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>5K</td>
+                        <td>150+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>6K</td>
+                        <td>180+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>7K</td>
+                        <td>210+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>8K</td>
+                        <td>240+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>9K</td>
+                        <td>270+ RESS</td>
+                    </tr>
+                    <tr>
+                        <td>10K</td>
+                        <td>300+ RESS</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="price-list">
+                <h2>LIST UNCHEK</h2>
+                <table>
+                    <tr>
+                        <th>Paket</th>
+                        <th>Jumlah UNCHEK</th>
+                    </tr>
+                    <tr>
+                        <td>1K</td>
+                        <td>10+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>2K</td>
+                        <td>20+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>3K</td>
+                        <td>30+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>4K</td>
+                        <td>40+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>5K</td>
+                        <td>50+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>6K</td>
+                        <td>60+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>7K</td>
+                        <td>70+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>8K</td>
+                        <td>80+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>9K</td>
+                        <td>90+ UNCHEK</td>
+                    </tr>
+                    <tr>
+                        <td>10K</td>
+                        <td>100+ UNCHEK</td>
+                    </tr>
+                </table>
+            </div>
+            
+            <div class="contact">
+                <h2>HUBUNGI KAMI</h2>
+                <p>Terhubung ke WhatsApp nomor admin di bawah ini:</p>
+                <p><strong>Nomor WA Admin:</strong> 082277507287</p>
+                <a href="https://wa.me/6282277507287" class="whatsapp-btn">Hubungi via WhatsApp</a>
+            </div>
+            
+            <div class="payment-methods">
+                <h2>METODE PEMBAYARAN</h2>
+                <p><strong>Nomor DANA:</strong> 082173644067</p>
+                
+                <div class="qris-container">
+                    <h3>QRIS</h3>
+                    <p>Scan QR code berikut untuk pembayaran:</p>
+                    <!-- Ganti src dengan URL gambar QRIS Anda -->
+                    <img src="qrditz.jpg" alt="QRIS Payment" class="qris-image">
+                    <p>Tekan gambar QRIS untuk memperbesar</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>&copy; 2025 JASTEB - Jasa Tebar. All Rights Reserved.</p>
+        </footer>
+    </div>
+
+    <script>
+        // Fungsi untuk mengontrol musik
+        const bgMusic = document.getElementById('bgMusic');
+        const musicToggle = document.getElementById('musicToggle');
+        let isPlaying = true;
+
+        // Coba mulai musik (beberapa browser memblokir autoplay)
+        document.addEventListener('DOMContentLoaded', function() {
+            bgMusic.volume = 0.3; // Atur volume ke 30%
+            const playPromise = bgMusic.play();
+            
+            if (playPromise !== undefined) {
+                playPromise.catch(error => {
+                    console.log('Autoplay prevented:', error);
+                    isPlaying = false;
+                    musicToggle.textContent = '♪';
+                });
+            }
+        });
+
+        // Tombol kontrol musik
+        musicToggle.addEventListener('click', function() {
+            if (isPlaying) {
+                bgMusic.pause();
+                musicToggle.textContent = '♪';
+            } else {
+                bgMusic.play();
+                musicToggle.textContent = '♫';
+            }
+            isPlaying = !isPlaying;
+        });
+    </script>
+</body>
+</html>
